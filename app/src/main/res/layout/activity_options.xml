@@ -14,4 +14,11 @@
         app:defaultNavHost="true"
         app:navGraph="@navigation/options_graph" />
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
