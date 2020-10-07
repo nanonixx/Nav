@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
@@ -25,6 +27,43 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <!-- Aqui va el contenido de la activity -->
+
+        <Button
+            android:id="@+id/action_goto_drawerActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drawer"
+            app:layout_constraintBottom_toTopOf="@id/action_goto_bottomActivity"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/action_goto_bottomActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom"
+            app:layout_constraintBottom_toTopOf="@id/action_goto_optionsActivity"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/action_goto_drawerActivity" />
+        <Button
+            android:id="@+id/action_goto_optionsActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Options"
+            app:layout_constraintBottom_toTopOf="@id/action_goto_tabbedActivity"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/action_goto_bottomActivity" />
+        <Button
+            android:id="@+id/action_goto_tabbedActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tabs"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/action_goto_optionsActivity" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
